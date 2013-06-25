@@ -13,27 +13,24 @@ win.add(label);
 win.open();
 
 // TODO: write your module tests here
-var AdwordsConversionTrackingTitaniumModule = require('com.geoplus.adwordsconversiontracking');
-Ti.API.info("module is => " + AdwordsConversionTrackingTitaniumModule);
+var adwords_tracker = require('com.geoplus.adwordsconversiontracking');
+Ti.API.info("module is => " + adwords_tracker);
 
-label.text = AdwordsConversionTrackingTitaniumModule.example();
+label.text = adwords_tracker.example();
 
-Ti.API.info("module exampleProp is => " + AdwordsConversionTrackingTitaniumModule.exampleProp);
-AdwordsConversionTrackingTitaniumModule.exampleProp = "This is a test value";
+Ti.API.info("module exampleProp is => " + adwords_tracker.exampleProp);
+adwords_tracker.exampleProp = "This is a test value";
 
-if (Ti.Platform.name == "android") {
-	var proxy = AdwordsConversionTrackingTitaniumModule.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
 
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
-}
-
+// This class provides a way to make easy asynchronous requests to Google for
+// conversion pings. Use the code as follows:
+//   conversionId:@"your id here"
+//          label:@"your label here"
+//          value:@"your app's price here"
+//          isRepeatable:true/false
+adwords_tracker.pingGoogle({
+    conversionId: 'aaa', 
+    label:        'bbb',
+    value:        'ccc',
+    isRepeatable: false
+});

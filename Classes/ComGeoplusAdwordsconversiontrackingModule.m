@@ -103,4 +103,17 @@
 	// example property setter
 }
 
+-(void)pingGoogle:(id)args {
+	ENSURE_ARG_COUNT(args, 1);
+    
+	NSDictionary *argsDic = [args objectAtIndex:0];
+    
+	NSString *conversionId = [argsDic objectForKey:@"conversionId"];
+	NSString *label        = [argsDic objectForKey:@"label"];
+	NSString *value        = [argsDic objectForKey:@"value"];
+//	BOOL     *isRepeatable = [argsDic objectForKey:@"isRepeatable"];
+	NSLog(@"[INFO] Calling Google Conversion Ping with %@, %@, %@", conversionId, label, value);
+    
+}
+
 @end
