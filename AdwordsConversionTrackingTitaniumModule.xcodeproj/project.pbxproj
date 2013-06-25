@@ -26,6 +26,9 @@
 		24DD6CFA1134B3F500162E58 /* ComGeoplusAdwordsconversiontrackingModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComGeoplusAdwordsconversiontrackingModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.m */; };
+		968DFEDF17799D14007E8812 /* GoogleConversionPing.h in Headers */ = {isa = PBXBuildFile; fileRef = 968DFEDD17799D14007E8812 /* GoogleConversionPing.h */; };
+		968DFEE017799D14007E8812 /* libGoogleConversionTracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 968DFEDE17799D14007E8812 /* libGoogleConversionTracking.a */; };
+		968DFEE217799D3D007E8812 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968DFEE117799D3D007E8812 /* AdSupport.framework */; };
 		AA747D9F0F9514B9006C5449 /* ComGeoplusAdwordsconversiontracking_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComGeoplusAdwordsconversiontracking_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -36,19 +39,23 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "AdwordsConversionTrackingTitaniumModule";
+			remoteInfo = AdwordsConversionTrackingTitaniumModule;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* ComGeoplusAdwordsconversiontrackingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComGeoplusAdwordsconversiontrackingModule.h"; path = "Classes/ComGeoplusAdwordsconversiontrackingModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* ComGeoplusAdwordsconversiontrackingModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComGeoplusAdwordsconversiontrackingModule.m"; path = "Classes/ComGeoplusAdwordsconversiontrackingModule.m"; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* ComGeoplusAdwordsconversiontrackingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComGeoplusAdwordsconversiontrackingModule.h; path = Classes/ComGeoplusAdwordsconversiontrackingModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ComGeoplusAdwordsconversiontrackingModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComGeoplusAdwordsconversiontrackingModule.m; path = Classes/ComGeoplusAdwordsconversiontrackingModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComGeoplusAdwordsconversiontrackingModuleAssets.h"; path = "Classes/ComGeoplusAdwordsconversiontrackingModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComGeoplusAdwordsconversiontrackingModuleAssets.m"; path = "Classes/ComGeoplusAdwordsconversiontrackingModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* ComGeoplusAdwordsconversiontracking_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComGeoplusAdwordsconversiontracking_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComGeoplusAdwordsconversiontrackingModuleAssets.h; path = Classes/ComGeoplusAdwordsconversiontrackingModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComGeoplusAdwordsconversiontrackingModuleAssets.m; path = Classes/ComGeoplusAdwordsconversiontrackingModuleAssets.m; sourceTree = "<group>"; };
+		968DFEDC17799D14007E8812 /* Changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog.txt; sourceTree = "<group>"; };
+		968DFEDD17799D14007E8812 /* GoogleConversionPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleConversionPing.h; sourceTree = "<group>"; };
+		968DFEDE17799D14007E8812 /* libGoogleConversionTracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleConversionTracking.a; sourceTree = "<group>"; };
+		968DFEE117799D3D007E8812 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AA747D9E0F9514B9006C5449 /* ComGeoplusAdwordsconversiontracking_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComGeoplusAdwordsconversiontracking_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libComGeoplusAdwordsconversiontracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libComGeoplusAdwordsconversiontracking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libComGeoplusAdwordsconversiontracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComGeoplusAdwordsconversiontracking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968DFEE217799D3D007E8812 /* AdSupport.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				968DFEE017799D14007E8812 /* libGoogleConversionTracking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +83,14 @@
 		0867D691FE84028FC02AAC07 /* AdwordsConversionTrackingTitaniumModule */ = {
 			isa = PBXGroup;
 			children = (
+				968DFEE117799D3D007E8812 /* AdSupport.framework */,
+				968DFEDB17799D14007E8812 /* GoogleConversionTrackingSDK-iOS-1.2.0 */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = "AdwordsConversionTrackingTitaniumModule";
+			name = AdwordsConversionTrackingTitaniumModule;
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
@@ -110,6 +121,16 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		968DFEDB17799D14007E8812 /* GoogleConversionTrackingSDK-iOS-1.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				968DFEDC17799D14007E8812 /* Changelog.txt */,
+				968DFEDD17799D14007E8812 /* GoogleConversionPing.h */,
+				968DFEDE17799D14007E8812 /* libGoogleConversionTracking.a */,
+			);
+			path = "GoogleConversionTrackingSDK-iOS-1.2.0";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -120,6 +141,7 @@
 				AA747D9F0F9514B9006C5449 /* ComGeoplusAdwordsconversiontracking_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* ComGeoplusAdwordsconversiontrackingModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComGeoplusAdwordsconversiontrackingModuleAssets.h in Headers */,
+				968DFEDF17799D14007E8812 /* GoogleConversionPing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +160,8 @@
 			);
 			dependencies = (
 			);
-			name = "AdwordsConversionTrackingTitaniumModule";
-			productName = "AdwordsConversionTrackingTitaniumModule";
+			name = AdwordsConversionTrackingTitaniumModule;
+			productName = AdwordsConversionTrackingTitaniumModule;
 			productReference = D2AAC07E0554694100DB518D /* libComGeoplusAdwordsconversiontracking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -221,11 +243,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComGeoplusAdwordsconversiontracking.dst";
+				DSTROOT = /tmp/ComGeoplusAdwordsconversiontracking.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComGeoplusAdwordsconversiontracking_Prefix.pch";
+				GCC_PREFIX_HEADER = ComGeoplusAdwordsconversiontracking_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -238,13 +260,16 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GoogleConversionTrackingSDK-iOS-1.2.0\"",
+				);
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComGeoplusAdwordsconversiontracking";
+				PRODUCT_NAME = ComGeoplusAdwordsconversiontracking;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -267,11 +292,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				DSTROOT = "/tmp/ComGeoplusAdwordsconversiontracking.dst";
+				DSTROOT = /tmp/ComGeoplusAdwordsconversiontracking.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComGeoplusAdwordsconversiontracking_Prefix.pch";
+				GCC_PREFIX_HEADER = ComGeoplusAdwordsconversiontracking_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -285,10 +310,13 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GoogleConversionTrackingSDK-iOS-1.2.0\"",
+				);
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComGeoplusAdwordsconversiontracking";
+				PRODUCT_NAME = ComGeoplusAdwordsconversiontracking;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -310,11 +338,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComGeoplusAdwordsconversiontracking.dst";
+				DSTROOT = /tmp/ComGeoplusAdwordsconversiontracking.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComGeoplusAdwordsconversiontracking_Prefix.pch";
+				GCC_PREFIX_HEADER = ComGeoplusAdwordsconversiontracking_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -332,7 +360,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComGeoplusAdwordsconversiontracking";
+				PRODUCT_NAME = ComGeoplusAdwordsconversiontracking;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -355,11 +383,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				DSTROOT = "/tmp/ComGeoplusAdwordsconversiontracking.dst";
+				DSTROOT = /tmp/ComGeoplusAdwordsconversiontracking.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComGeoplusAdwordsconversiontracking_Prefix.pch";
+				GCC_PREFIX_HEADER = ComGeoplusAdwordsconversiontracking_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -375,7 +403,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComGeoplusAdwordsconversiontracking";
+				PRODUCT_NAME = ComGeoplusAdwordsconversiontracking;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
