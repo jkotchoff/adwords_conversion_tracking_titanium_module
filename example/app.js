@@ -28,9 +28,33 @@ adwords_tracker.exampleProp = "This is a test value";
 //          label:@"your label here"
 //          value:@"your app's price here"
 //          isRepeatable:true/false
-adwords_tracker.pingGoogle({
+if(!Ti.Android) {
+  adwords_tracker.pingGoogle({
     conversionId: 'aaa', 
     label:        'bbb',
     value:        'ccc',
     isRepeatable: false
-});
+  });
+
+  adwords_tracker.pingGoogle({
+    conversionId: 'aaa', 
+    label:        'bbb',
+    value:        'ccc',
+    isRepeatable: false
+  });
+
+  adwords_tracker.pingGoogle({
+    conversionId: '1234', 
+    label:        'jason',
+    value:        'baller',
+    isRepeatable: true
+  });
+
+  adwords_tracker.pingGoogle({
+    conversionId: '1234', 
+    label:        'jason',
+    value:        'baller',
+    isRepeatable: true
+  });
+
+}

@@ -8,6 +8,7 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#import "GoogleConversionPing.h"
 
 @implementation ComGeoplusAdwordsconversiontrackingModule
 
@@ -111,9 +112,10 @@
 	NSString *conversionId = [argsDic objectForKey:@"conversionId"];
 	NSString *label        = [argsDic objectForKey:@"label"];
 	NSString *value        = [argsDic objectForKey:@"value"];
-//	BOOL     *isRepeatable = [argsDic objectForKey:@"isRepeatable"];
-	NSLog(@"[INFO] Calling Google Conversion Ping with %@, %@, %@", conversionId, label, value);
-    
+	BOOL     isRepeatable  = [argsDic objectForKey:@"isRepeatable"];
+	NSLog(@"[INFO] Calling Google Conversion Ping with %@, %@, %@, %@", conversionId, label, value, isRepeatable ? @"YES" : @"NO");
+
+    [GoogleConversionPing pingWithConversionId:conversionId label:label value:value isRepeatable:isRepeatable];
 }
 
 @end
