@@ -16,7 +16,7 @@ As per:
 [http://docs.appcelerator.com/titanium/latest/#!/guide/Using_Titanium_Modules](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_Titanium_Modules),
 
 download and unzip this module into your Titanium project:  
-[http://github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/com.geoplus.adwordsconversiontracking-iphone-0.1.zip](http://github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/com.geoplus.adwordsconversiontracking-iphone-0.1.zip)
+[https://raw.github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/master/com.geoplus.adwordsconversiontracking-iphone-0.1.zip](https://raw.github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/master/com.geoplus.adwordsconversiontracking-iphone-0.1.zip)
 
 ## Using this module
 
