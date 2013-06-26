@@ -2,38 +2,59 @@
 
 ## Description
 
-TODO: Enter your module description here
+This Titanium module wraps the Google mobile Ads Conversion tracking for iOS SDK from:  
+[https://developers.google.com/mobile-ads-sdk/docs/admob/conversion-tracking](https://developers.google.com/mobile-ads-sdk/docs/admob/conversion-tracking)
 
-## Accessing the AdwordsConversionTrackingTitaniumModule Module
+It was created as per the Appcelerator Titanium iOS Module Development Guide:  
+[https://wiki.appcelerator.org/display/guides/iOS+Module+Development+Guide](https://wiki.appcelerator.org/display/guides/iOS+Module+Development+Guide)
 
-To access this module from JavaScript, you would do the following:
+using Titanium sdk version 3.0.2
 
-	var AdwordsConversionTrackingTitaniumModule = require("com.geoplus.adwordsconversiontracking");
+## Installing this module
 
-The AdwordsConversionTrackingTitaniumModule variable is a reference to the Module object.	
+As per:  
+[http://docs.appcelerator.com/titanium/latest/#!/guide/Using_Titanium_Modules](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_Titanium_Modules),
 
-## Reference
+download and unzip this module into your Titanium project:  
+[http://github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/com.geoplus.adwordsconversiontracking-iphone-0.1.zip](http://github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/com.geoplus.adwordsconversiontracking-iphone-0.1.zip)
 
-TODO: If your module has an API, you should document
-the reference here.
+## Using this module
 
-### ___PROJECTNAMEASIDENTIFIER__.function
+    var adwords_tracker = require('com.geoplus.adwordsconversiontracking');
+    if(!Ti.Android) {
+      // A non-repeatable conversion event
+      adwords_tracker.pingGoogle({
+        conversionId: '< your id here >', 
+        label:        '< your label here >',
+        value:        '< your value here >',
+        isRepeatable: false
+      });
 
-TODO: This is an example of a module function.
-
-### ___PROJECTNAMEASIDENTIFIER__.property
-
-TODO: This is an example of a module property.
-
-## Usage
-
-TODO: Enter your usage example here
+      // A repeatable conversion event
+      adwords_tracker.pingGoogle({
+        conversionId: '< your id here >', 
+        label:        '< your label here >',
+        value:        '< your value here >',
+        isRepeatable: true
+      });
+    }
 
 ## Author
 
-TODO: Enter your author name, email and other contact
-details you want to share here. 
+Jason Kotchoff  
+[http://www.geoplus.com.au](http://www.geoplus.com.au)
 
 ## License
 
-TODO: Enter your license/legal information here.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

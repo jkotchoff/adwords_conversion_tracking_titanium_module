@@ -11,10 +11,10 @@ using Titanium sdk version 3.0.2
 ## Installing this module
 
 As per:  
-[https://wiki.appcelerator.org/display/tis/Using+Titanium+Modules](https://wiki.appcelerator.org/display/tis/Using+Titanium+Modules),
+[http://docs.appcelerator.com/titanium/latest/#!/guide/Using_Titanium_Modules](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_Titanium_Modules),
 
 download and unzip this module into your Titanium project:  
-[github/...](http://github.com)
+[http://github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/com.geoplus.adwordsconversiontracking-iphone-0.1.zip](http://github.com/cornflakesuperstar/adwords_conversion_tracking_titanium_module/com.geoplus.adwordsconversiontracking-iphone-0.1.zip)
 
 and then reference it in your tiapp.xml:
 
@@ -23,10 +23,10 @@ and then reference it in your tiapp.xml:
         <module version="0.1" platform="iphone">com.geoplus.adwordsconversiontracking</module>
       </modules>
     </ti:app>
-    </code>
 
 ## Using this module
 
+    var adwords_tracker = require('com.geoplus.adwordsconversiontracking');
     if(!Ti.Android) {
       // A non-repeatable conversion event
       adwords_tracker.pingGoogle({
