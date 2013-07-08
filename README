@@ -1,6 +1,8 @@
 Appcelerator Titanium iPhone Module Project
 ===========================================
 
+NOTE: THIS MODULE IS NOT IN A WORKING STATE - FOR AN UNKNOWN REASON, THE CONVERSION PING IS NOT FIRING..
+
 This is a skeleton Titanium Mobile iPhone module project.  Modules can be 
 used to extend the functionality of Titanium by providing additional native
 code that is compiled into your application at build time and can expose certain
